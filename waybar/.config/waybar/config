@@ -1,0 +1,40 @@
+{
+	// general
+	"layer": "top",
+	"height": 42,
+	"margin-top": 6,
+	"margin-bottom": 0,
+	"margin-right": 4,
+	"margin-left": 4,
+
+	// load modules
+	"include": [
+		"~/.dotfiles/waybar/.config/waybar/modules.json"
+	],
+
+	// modules left
+	"modules-left": [
+		"wlr/taskbar",
+		"sway/window",
+		"sway/mode"
+	],
+
+	// modules center
+	"modules-center": [
+		"sway/workspaces"
+	],
+
+	// modules right
+	"modules-right": [
+		"bluetooth",
+		"network",
+		"pulseaudio",
+		"battery",
+		"group/hw",
+		"sway/language",
+		"clock",
+		"custom/power"
+	]
+	
+}
+	

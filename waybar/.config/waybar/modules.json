@@ -1,0 +1,140 @@
+{
+	// taskbar
+	"wlr/taskbar": {
+		"icon-size": 18,
+		"on-click": "activate",
+		"ignore-list": [
+			"Alacritty"
+		],
+		"tooltip": false
+	},
+
+	// window
+	"sway/window": {
+		"format": "{title}",
+		"max-length": 50,
+		"rewrite": {
+			".*LibreWolf.*": "LibreWolf"
+		},
+		"tooltip": false
+	},
+
+	// resize indicator
+	"sway/mode": {
+		"format": " ",
+		"tooltip": false
+	},
+
+	// workspace
+	"sway/workspaces": {
+		"format": "{icon}",
+		"all-outputs": true,
+		"persistent-workspaces": {
+			"1": [],
+			"2": [],
+			"3": []
+		},
+		"format-icons": {
+			"1": " ",
+			"2": " ",
+			"3": " "
+		},
+		"disable-scroll": true
+	},
+
+	// battery
+	"battery": {
+		"bat": "BAT0",
+		"adapter": "AC",
+		"interval": 10,
+		"format": "{icon} {capacity}%",
+		"format-charging": "  {capacity}%",
+		"format-icons": [
+			" ",
+			" ",
+			" ",
+			" ",
+			" "
+		],
+		"tooltip": false
+	},
+
+	// wifi
+	"network": {
+		"interval": 10,
+		"format-ethernet": "󰈀 ",
+		"format-disconnected": "󰤭 ",
+		"format-linked": "󰤩 ",
+		"format-wifi": "{icon}",
+		"format-icons": [
+			"󰤯 ",
+			"󰤟 ",
+			"󰤢 ",
+			"󰤥 ",
+			"󰤨 "
+		],
+		"tooltip": false
+	},
+
+	// bluetooth
+	"bluetooth": {
+		//"format": "",
+		"format": "",
+		"format-connected": "",
+		"tooltip": false
+	},
+
+	// keyboard layout
+	"sway/language": {
+		"on-click": "swaymsg input type:keyboard xkb_switch_layout next",
+		"tooltip": false
+	},
+
+	// sound
+	"pulseaudio": {
+		"format": "{icon}",
+		"format-muted": " ",
+		"format-icons": [
+			" ",
+			" ",
+			" ",
+			" "
+		],
+		"tooltip": false
+	},
+
+	// time and date
+	"clock": {
+		"format": "{:%e %b %H:%M}",
+		"tooltip": false
+	},
+
+	// cpu
+	"cpu": {
+		"format": "  {usage}",
+		"tooltip": false
+	},
+
+	// mem + swap
+	"memory": {
+		"format": "  {percentage}",
+		"tooltip": false
+	},
+
+	// hw group
+	"group/hw": {
+		"orientation": "vertical",
+		"modules": [
+			"cpu",
+			"memory"
+		]
+	},
+
+	// power
+	"custom/power": {
+		"format": " ",
+		"on-click": "wlogout",
+		"tooltip": false
+	}
+
+}	

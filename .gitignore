@@ -1,0 +1,12 @@
+# secrects
+*.secret
+*.key
+*.pem
+
+# garbage
+.DS_Store
+*.swp
+*~
+
+# todo file
+todo.txt

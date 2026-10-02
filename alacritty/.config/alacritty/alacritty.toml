@@ -1,0 +1,14 @@
+[window.padding]
+x = 5
+y = 5
+
+[font]
+size = 12
+
+[font.normal]
+family = "Iosevka Nerd Font Mono"
+
+[general]
+import = [
+	"~/.dotfiles/alacritty/.config/alacritty/themes/tokyo_night.toml"
+]
