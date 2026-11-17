@@ -3,6 +3,7 @@ configuration {
 	drun-display-format: "{icon} {name}";
 	font: "Iosevka Nerd Font 16";
 	show-icons: true;
+	click-to-exit: false;
 }
 
 @theme "/dev/null"
